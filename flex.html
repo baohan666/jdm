@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<script>
+			(function(){
+				var htm = document.documentElement;
+				var htmW = htm.getBoundingClientRect().width;
+				//375 就是设计稿 750px
+				htm.style.fontSize = htmW/15+"px";
+				//1rem = 50px
+			})()
+		</script>
+		<style>
+			
+			.container{			
+				border: 1px solid #000;
+				display: flex;
+			}
+			.left,.right,.center{
+				flex: 1;
+			}
+			.left{
+				background: red;
+				height: 1rem;
+			}
+			.center{
+				background: green;
+				height: 1rem;
+			}
+			.right{
+				background: blue;
+				height: 1rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="left"></div>
+			<div class="center"></div>
+			<div class="right"></div>			
+		</div>
+	</body>
+</html>
